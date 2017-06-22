@@ -344,7 +344,7 @@ function swapCandy(event, candyDrag) {
 	setTimeout(function () {
 		checkBoard();
 		// De esta manera, impedimos movimientos equivocados
-		if ($('img.delete').length == 0) {
+		if ($('img.delete').length === 0) {
 			// Caramelo Arrastrar y caramelo Drop se les da su src inicial
 			candyDrag.attr('src', dragSrc);
 			candyDrop.attr('src', dropSrc);
